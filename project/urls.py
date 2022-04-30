@@ -23,12 +23,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # uncomment to use Bootstrap starter template
-    path('', TemplateView.as_view(
-        template_name='start_temp.html'), name='index'),
+    # path('', TemplateView.as_view(
+    #     template_name='start_temp.html'), name='index'),
 
     # User Defined
-    # path('accounts/', include('user.urls')),
-    # path('', include('page.urls')),
+    path('accounts/', include('custom_user.urls')),
+    path('', include('cover_page.urls')),
 ]
 
 if settings.DEBUG:  # use django-debug-toolbar

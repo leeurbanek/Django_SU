@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
 
     # User Defined
-    # 'cover_page.apps.CoverPageConfig',
+    'cover_page.apps.CoverPageConfig',
     'custom_user.apps.CustomUserConfig',
 ]
 
@@ -73,7 +73,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             BASE_DIR / 'project/templates',
-            # BASE_DIR / 'cover_page/templates',
+            BASE_DIR / 'cover_page/templates',
             BASE_DIR / 'custom_user/templates',
         ],
         'APP_DIRS': True,
