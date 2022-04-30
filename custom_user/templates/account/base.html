@@ -1,0 +1,11 @@
+{% extends "site_main.html" %}
+{% load static %}
+
+{% block main_body %}
+
+  <div class="mypage-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <img class="mb-4" src="{% static 'img/web_design.png' %}" alt="" width="360" height="240">
+    {% block content %}{% endblock %}
+    </div>
+
+{% endblock main_body %}

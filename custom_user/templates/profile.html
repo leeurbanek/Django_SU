@@ -1,0 +1,15 @@
+{% extends 'site_main.html' %}
+
+{% block head_title %}Profile | {{ block.super }}{% endblock %}
+{% block message %}
+  {% if messages %}
+    <div>
+    <strong>Messages:</strong>
+    <ul>
+      {% for message in messages %}
+        <li>{{message}}</li>
+      {% endfor %}
+    </ul>
+    </div>
+  {% endif %}
+{% endblock %}

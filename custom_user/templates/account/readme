@@ -1,0 +1,1 @@
+To overide or customize django-allauth template copy the target template from https://github.com/pennersr/django-allauth/tree/master/allauth/templates/account and place in this folder.
